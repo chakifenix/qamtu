@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "216341958949",
+    "project_id": "qamtu-7f8bb",
+    "storage_bucket": "qamtu-7f8bb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:216341958949:android:ab8e56c326152dd2fb0acc",
+        "android_client_info": {
+          "package_name": "kz.qamtu"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "216341958949-f0cauerc3du58fjbop9hi8gsjau9km47.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAJ0r7tpqJVZ4ghMEt57aZSTc1vrsowKDg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "216341958949-f0cauerc3du58fjbop9hi8gsjau9km47.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "216341958949-2nsj03kvoh0lh22m59q2eajlpu6fpedi.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "mediana.qamtu.qamtu"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
