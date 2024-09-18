@@ -6,39 +6,45 @@ import 'package:qamtu/urls.dart';
 import '../../services/firebase_service.dart';
 
 class NotificationCubit extends Cubit<bool?> {
-
   final UserCubit userCubit;
   NotificationCubit({required this.userCubit}) : super(null);
 
   void getNotifStatus(String language) {
-    userCubit.makeRequest(url: NOTIFICATION_URL, language: language, headers: {'X-Auth': userCubit.state!.accessToken, 'Accept' : 'application/json',}).then((value) => {
-      if(value is Response) {
-        emit(true)
-      } else {
-        emit(false)
-      }
-    });
+    userCubit.makeRequest(url: NOTIFICATION_URL, language: language, headers: {
+      'X-Auth': userCubit.state!.accessToken,
+      'Accept': 'application/json',
+    }).then((value) => {
+          if (value is Response) {emit(true)} else {emit(false)}
+        });
   }
 
   Future<void> setNotifState(String language, bool status) async {
-    if(status != state) {
-      if(!status) {
-        userCubit.makeRequest(url: NOTIFICATION_URL, language: language, headers: {'X-Auth': userCubit.state!.accessToken, 'Accept' : 'application/json',}, isPost: true, body: {'firebase_token': ''}).then((value) => {
-          if(value is Response) {
-            emit(false)
-          }
-        });
+    if (status != state) {
+      if (!status) {
+        userCubit
+            .makeRequest(
+                url: NOTIFICATION_URL,
+                language: language,
+                headers: {
+                  'X-Auth': userCubit.state!.accessToken,
+                  'Accept': 'application/json',
+                },
+                isPost: true,
+                body: {'firebase_token': ''})
+            .then((value) => {
+                  if (value is Response) {emit(false)}
+                });
       } else {
-        final bool notifStatus = await FirebaseService().requestPermission();
+        // final bool notifStatus = await FirebaseService().requestPermission();
 
-        if(notifStatus) {
-          String token = await FirebaseService().getToken();
-          userCubit.makeRequest(url: NOTIFICATION_URL, language: language, headers: {'X-Auth': userCubit.state!.accessToken, 'Accept' : 'application/json',}, isPost: true, body: {'firebase_token': token}).then((value) => {
-            if(value is Response) {
-              emit(true)
-            }
-          });
-        }
+        // if(notifStatus) {
+        //   String token = await FirebaseService().getToken();
+        //   userCubit.makeRequest(url: NOTIFICATION_URL, language: language, headers: {'X-Auth': userCubit.state!.accessToken, 'Accept' : 'application/json',}, isPost: true, body: {'firebase_token': token}).then((value) => {
+        //     if(value is Response) {
+        //       emit(true)
+        //     }
+        //   });
+        // }
       }
     }
   }

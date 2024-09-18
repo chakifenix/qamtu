@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>API_KEY</key>
+	<string>AIzaSyDOYjFiTpf8TctBf9pL4kM_3gitPxZw_Us</string>
+	<key>GCM_SENDER_ID</key>
+	<string>584361537100</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>kz.qamtu</string>
+	<key>PROJECT_ID</key>
+	<string>notif-test-56453</string>
+	<key>STORAGE_BUCKET</key>
+	<string>notif-test-56453.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:584361537100:ios:e1709064fcee9d45458ee9</string>
+</dict>
+</plist>

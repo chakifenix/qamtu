@@ -1,7 +1,5 @@
-import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:qamtu/presentation/screens/tabview_screen.dart';
 import '../../logic/cubit/user_cubit.dart';
 import '../../models/user_model.dart';
@@ -15,7 +13,6 @@ class AuthResponderScreen extends StatefulWidget {
 }
 
 class _AuthResponderScreenState extends State<AuthResponderScreen> {
-
   // late FlutterLocalNotificationsPlugin flutterLocalNotificationsPlugin = FlutterLocalNotificationsPlugin();
 
   @override
@@ -87,7 +84,7 @@ class _AuthResponderScreenState extends State<AuthResponderScreen> {
   Widget build(BuildContext context) {
     return BlocBuilder<UserCubit, UserModel?>(
       builder: (context, state) {
-        if(state == null) {
+        if (state == null) {
           return LoginScreen();
         } else {
           return TabviewScreen();

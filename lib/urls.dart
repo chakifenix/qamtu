@@ -1,7 +1,7 @@
-// const String BASE_URL = 'api.e.qamtu.kz';
-const String BASE_URL = '192.168.31.31:8008';
+const String BASE_URL = 'api.e.qamtu.kz';
+// const String BASE_URL = '192.168.31.31:8008';
 // const String MID_URL = '/api';
-const String MID_URL = '/QamtuUser/public/api';
+const String MID_URL = '/api';
 const String LOGIN_EMAIL_URL = '/login/email';
 const String LOGIN_PHONE_URL = '/login/phone';
 const String LOGIN_NOTIFY_URL = '/login/notify';

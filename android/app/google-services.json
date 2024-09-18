@@ -1,43 +1,45 @@
 {
   "project_info": {
-    "project_number": "216341958949",
-    "project_id": "qamtu-7f8bb",
-    "storage_bucket": "qamtu-7f8bb.appspot.com"
+    "project_number": "584361537100",
+    "project_id": "notif-test-56453",
+    "storage_bucket": "notif-test-56453.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:216341958949:android:ab8e56c326152dd2fb0acc",
+        "mobilesdk_app_id": "1:584361537100:android:aa9a4c41cb2b98f5458ee9",
         "android_client_info": {
-          "package_name": "kz.qamtu"
+          "package_name": "com.example.blog_app"
         }
       },
-      "oauth_client": [
-        {
-          "client_id": "216341958949-f0cauerc3du58fjbop9hi8gsjau9km47.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
+      "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyAJ0r7tpqJVZ4ghMEt57aZSTc1vrsowKDg"
+          "current_key": "AIzaSyCdNyVzAiihDqjH0xwVxUr_bjlcFXFsRwU"
         }
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "216341958949-f0cauerc3du58fjbop9hi8gsjau9km47.apps.googleusercontent.com",
-              "client_type": 3
-            },
-            {
-              "client_id": "216341958949-2nsj03kvoh0lh22m59q2eajlpu6fpedi.apps.googleusercontent.com",
-              "client_type": 2,
-              "ios_info": {
-                "bundle_id": "mediana.qamtu.qamtu"
-              }
-            }
-          ]
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:584361537100:android:bd03ef09ae966ce1458ee9",
+        "android_client_info": {
+          "package_name": "kz.qamtu"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCdNyVzAiihDqjH0xwVxUr_bjlcFXFsRwU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
         }
       }
     }
